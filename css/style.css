@@ -1,0 +1,672 @@
+/* ==================================================
+   CSS Imports
+================================================== */
+
+@import url("reset.css");
+@import url("columns.css");
+@import url("typography.css");
+@import url("menu.css");
+@import url("animate.css");
+
+/* ==================================================
+   Icon Fonts
+================================================== */
+
+@import url("fonts/fontawesome/font-awesome.css");
+
+/* ==================================================
+   Google Fonts
+================================================== */
+
+@import url("http://fonts.googleapis.com/css?family=Fira+Sans:300,300italic,400,400italic,500,500italic,700,700italic");
+
+/* ==================================================
+   Global Styles
+================================================== */
+
+*
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html
+{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body
+{
+	font-family: "Fira Sans", Arial, Verdana, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #666;
+	background: #16A085;
+	line-height: 28px;
+	font-weight: 300;
+	z-index: auto;
+
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+}
+
+::selection
+{
+	background: #16A085;
+	color: #FFF;
+}
+
+::-moz-selection
+{
+	background: #16A085;
+	color: #FFF;
+}
+
+a
+{
+	color: #5E89A7;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #222;
+}
+
+/* ==================================================
+   Images
+================================================== */
+
+img
+{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+	img.imgright
+	{
+		float: right;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 0 20px 20px;
+	}
+
+	img.imgleft
+	{
+		float: left;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 20px 20px 0;
+	}
+
+/* ==================================================
+   Colours
+================================================== */
+
+.bg1
+{
+	background: url("../images/hunterswood-uc.png") no-repeat scroll top center;
+	background-size: cover;
+}
+
+.bg2
+{
+	background: #FFF;
+}
+
+.bg3
+{
+	background: #5E89A7;
+}
+
+/* ==================================================
+   Layout Styles
+================================================== */
+
+.container
+{
+	width: 100%;
+	padding: 0 30px;
+	min-width: 280px;
+	line-height: 26px;
+}
+
+	.container .bodycontainer
+	{
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1000px;
+	}
+
+#formview textarea {
+  height: 10.3em; }
+
+#editor-frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 200px;
+  border: solid 1px #bbb;
+  margin-bottom: 0.5em; }
+
+.col-1-3 {
+  float: left;
+  padding: 0 20px;
+  width: 33.33%; }
+  @media (max-width: 760px) {
+    .col-1-3 {
+      width: 100% !important;
+      margin-bottom: 20px !important; } }
+
+
+
+/* ==================================================
+   Sticky Menu
+================================================== */
+
+.stickydiv
+{
+	position: relative;
+	z-index: 999;
+	width: 100%;
+}
+
+	.stickydiv.stuck
+	{
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 999;
+	}
+
+/* ==================================================
+   Sections
+================================================== */
+
+#topcont
+{
+	padding: 20px 0;
+	text-align: left;
+}
+
+	#topcont #topleft
+	{
+		float: left;
+	}
+
+		#topcont #topleft h1
+		{
+			font-size: 46px;
+			line-height: 46px;
+			margin: 0;
+			font-weight: 600;
+		}
+
+			#topcont #topleft h1 a
+			{
+				color: #5E89A7;
+			}
+
+				#topcont #topleft h1 a span
+				{
+					color: #16A085;
+					margin: 0 5px 0 0;
+				}
+
+	#topcont #topright
+	{
+		float: right;
+	}
+
+		#topcont #topright #socialmedia ul
+		{
+			float: right;
+			margin: 6px 0 0 0;
+		}
+
+		#topcont #topright #socialmedia ul li
+		{
+			display: block;
+			float: left;
+			list-style-type: none;
+			padding: 0;
+		}
+
+			#topcont #topright #socialmedia ul li a
+			{
+				float: left;
+				font-size: 22px;
+				line-height: 40px;
+				min-width: 40px;
+				margin: 0 0 0 6px;
+				text-align: center;
+				color: #FFF;
+				background: #CCC;
+
+				-webkit-border-radius: 30px;
+				-moz-border-radius: 30px;
+				border-radius: 30px;
+			}
+
+			#topcont #topright #socialmedia ul li a:hover
+			{
+				background: #16A085;
+			}
+
+#menucont
+{
+	padding: 0;
+}
+
+	#menucont p
+	{
+		margin: 0;
+	}
+
+#gallerycont
+{
+	padding: 130px 0;
+	color: #FFF;
+}
+
+	#gallerycont h1
+	{
+		width: 100%;
+		max-width: 700px;
+		color: #ffffcc;
+		font-size: 50px;
+		line-height: 62px;
+		font-weight: 600;
+		letter-spacing: -2px;
+		margin: 0 0 20px 0;
+		text-shadow: #000 5px 5px 10px;
+	}
+
+	#gallerycont p
+	{
+		font-size: 35px;
+		margin: 0;
+		font-weight: 600;
+		font-style: italic;
+		color: #fff;
+		text-shadow: #000 5px 5px 10px;
+	}
+
+#maincont
+{
+	padding: 10px 0;
+	min-height: 500px;
+}
+
+	#maincont #mainleft
+	{
+		float: left;
+		width: 70%;
+		padding-right: 25px;
+	}
+
+	#maincont #mainright
+	{
+		float: left;
+		width: 30%;
+		padding-left: 25px;
+	}
+
+#footercont
+{
+	padding: 40px 0;
+	color: rgba(255, 255, 255, 0.5);
+	font-style: italic;
+	text-align: right;
+}
+
+	#footercont a
+	{
+		color: #FFF;
+	}
+
+	#footercont p
+	{
+		margin: 0;
+	}
+
+
+/* ==================================================
+   Style font-awesome
+================================================== */
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+
+/* ==================================================
+   Responsive Media Queries - Tablets
+================================================== */
+
+@media screen and (max-width: 768px)
+{
+
+	img.imgright
+	{
+		float: none;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 0 20px 0;
+	}
+
+	img.imgleft
+	{
+		float: none;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 0 20px 0;
+	}
+
+	#topcont #topleft
+	{
+		float: left;
+		width: 100%;
+	}
+
+	#topcont #topright
+	{
+		float: left;
+		width: 100%;
+	}
+
+		#topcont #topright #socialmedia ul
+		{
+			float: left;
+			margin: 15px 0 0 0;
+		}
+
+			#topcont #topright #socialmedia ul li a
+			{
+				margin: 0 6px 0 0;
+			}
+
+	#gallerycont
+	{
+		padding: 80px 0;
+	}
+
+		#gallerycont h1
+		{
+			font-size: 42px;
+			line-height: 42px;
+			letter-spacing: -1px;
+		}
+
+		#gallerycont p
+		{
+			font-size: 18px;
+		}
+
+	#maincont
+	{
+
+	}
+
+		#maincont #mainleft
+		{
+			width: 100%;
+			padding-right: 0;
+		}
+
+		#maincont #mainright
+		{
+			width: 100%;
+			padding-left: 0;
+		}
+
+	#footercont
+	{
+		text-align: left;
+	}
+
+}
+
+/* ==================================================
+   Responsive Media Queries - Mobiles
+================================================== */
+
+@media screen and (max-width: 480px)
+{
+
+	#topcont #topleft h1 a span
+	{
+		display: none;
+	}
+
+}
+
+/* ==================================================
+   Form Spree Stuff
+================================================== */
+
+
+summary {
+  display: block; }
+
+textarea {
+  font-family: sans-serif; }
+
+
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline; }
+
+button,
+input {
+  line-height: normal; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+
+
+
+.card,
+.index-card {
+  padding: 0.9em;
+  background: #fff;
+  border: 1px solid #ddd; }
+  .card h1,
+  .index-card h1 {
+    font-size: 1.8em; }
+
+.row.grey {
+  background: #f1f1fa; }
+
+
+input, textarea {
+  font-size: 0.8em;
+  font-family: 'proxima-nova-soft', sans-serif;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 0.9em;
+  transition: all 0.3s ease-in-out;
+  width: 100%; }
+  input.code, textarea.code {
+    font-family: "source-code-pro", monospace; }
+  input:focus, textarea:focus {
+    border-color: #2A735B;
+    outline: none;
+    box-shadow: 0 0 5px 1px #359173; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: 6px; }
+
+form input, form textarea {
+  margin-bottom: 0.5em; }
+
+button, a.button {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px solid #359173;
+  color: #359173;
+  background: transparent;
+  line-height: 1em;
+  padding: 0.6em 0.9em;
+  transition: all 0.3s ease-in-out; }
+  button:hover, a.button:hover {
+    border-color: #2A735B;
+    color: #2A735B; }
+    button:hover.emphasis, a.button:hover.emphasis {
+      color: white;
+      background-color: #2A735B; }
+  button[disabled], button[disabled]:hover, a.button[disabled], a.button[disabled]:hover {
+    color: #b0e2d2;
+    border-color: #b0e2d2; }
+
+.animate {
+  -moz-animation-iteration-count: once;
+  -moz-animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  -moz-animation-duration: 0.4s;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  -webkit-animation-duration: 0.4s; }
+  .animate.dropIn {
+    -moz-animation-name: dropIn;
+    -webkit-animation-name: dropIn; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+@-webkit-keyframes dropIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -150px, 0);
+    -moz-transform: translate3d(0, -150px, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes dropInLong {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -450px, 0);
+    -moz-transform: translate3d(0, -450px, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg); } }
+
+@-webkit-keyframes rotateBack {
+  100% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg); } }
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: -10000px;
+  left: -10000px;
+  opacity: 0;
+  transition: opacity 0.4s linear;
+  background: rgba(255, 255, 255, 0.96); }
+
+body.showOverlay {
+  overflow: hidden; }
+  body.showOverlay .overlay {
+    top: 0;
+    left: 0;
+    opacity: 1; }
+    body.showOverlay .overlay iframe {
+      -webkit-animation-iteration-count: once;
+      -webkit-animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+      -webkit-animation-duration: 0.4s;
+      -moz-animation-name: dropInLong;
+      -webkit-animation-name: dropInLong; }
+
+
